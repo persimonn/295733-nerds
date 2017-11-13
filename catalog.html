@@ -22,9 +22,9 @@
 	</header>
     
 	<main>
-	  <section class="catalog-wrapper">
+	  <div class="container">
 	    <h1 class="">Магазин готовых шаблонов</h1>
-	      <div class="product-sorting">
+	      <section class="product-sorting">
 		    <h2 class="visually-hidden">Сортировка товаров</h2>
               <form action="#" method="get">
 			    
@@ -65,7 +65,7 @@
 				</div>
 				
 				<div class="filter-button">
-				  <input type="submit" value="Показать" class="btn filter-btn">
+				  <a class="btn filter-btn" href="#" title="Показать результаты сортировки">Показать</a>
 				</div>
 				
 			    </form>
@@ -78,10 +78,10 @@
 				  <a class="sorting-option" href="#" title="По нарастающей">по нарастающей</a>
 				  <a class="sorting-option" href="#" title="По убывающей">по убывающей</a>
 			</div>
-		  </div>
+		  </section>
 		
-		  <div class="catalog">
-		    <h2 class="visually-hidden">Каталог товаров<h2/>
+		  <section class="catalog">
+		    <h2 class="visually-hidden">Каталог товаров</h2>
 		    <ul class="catalog-list">
 		      <li class="catalog-item">
 			    <div class="browser-outline">
@@ -144,9 +144,8 @@
 			    </div>
 			  </li>
 		    </ul>
-		  </div>
-	 
-	      <div class="pagination">
+			
+			<div class="pagination">
 		    <ul class="pagination-list">
 		      <li class="pagination-item pagination-item-current"><a>1</a></li>
 			  <li class="pagination-item"><a href="#">2</a></li>
@@ -154,9 +153,10 @@
 			  <li class="pagination-item"><a href="#">Следующая</a></li>
 		    </ul>
 		  </div>
+			
+		  </section>
 	  
-	  
-	  </section>
+	  </div>
 	
 	  <section class="map-contacts-wrapper">
 	    <h1 class="visually-hidden">Как найти дизайн-студию Nerds</h1>
@@ -185,7 +185,7 @@
 	
 	<section class="modal-window">
 	  <h2 class="modal-title">Напишите нам</h2>
-	    <input type="submit" value="Закрыть окно">
+	    <button type="button" value="close-modal-window">Закрыть окно</button>
 	    <div class="half-width">
 	      <label for="name-field">Ваше имя:</label>
 	        <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
@@ -195,7 +195,7 @@
 	        <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
 	    </div>
 	  <label for="message-field">Текст письма:</label>
-	  <textarea name="message" id="message-field" rows="" placeholder="В свободной форме"></textarea><br>
+	  <textarea name="message" id="message-field" rows="4" placeholder="В свободной форме"></textarea><br>
 	  <input class="btn submit-btn" type="submit" value="Отправить">
 	</section>
 	
