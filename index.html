@@ -2,21 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>HTML Academy: Нёрдс - Основная</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   
   <body>
-	<header class="page-header">
+	<header class="page-header index-page-header">
 	  <nav class="main-navigation">
 	    <a class="header-logo"><img src="img/nerds-logo.png" alt="Дизайн-студия Nerds" height="65" width="160"></a>
-	    <ul class="navigation-bar">
-		  <li class="nav-item"><a href="#">Студия</a></li>
-		  <li class="nav-item"><a href="#">Клиенты</a></li>
-		  <li class="nav-item"><a href="catalog.html">Магазин</a></li>
-		  <li class="nav-item"><a href="#">Контакты</a></li>
+	    <ul class="site-navigation">
+		  <li class="site-nav-item site-nav-item-current"><a title="Студия">Студия</a></li>
+		  <li class="site-nav-item"><a href="#" title="Клиенты">Клиенты</a></li>
+		  <li class="site-nav-item"><a href="#" title="Магазин">Магазин</a></li>
+		  <li class="site-nav-item"><a href="#" title="Контакты">Контакты</a></li>
 		</ul>
-		<ul class="shopping-cart">
-		  <li class="cart-item"><a class="cart-btn" href="#">Корзина</a></li>
+		<ul class="user-navigation">
+		  <li class="user-nav-item"><a class="cart-btn" href="#">Корзина</a></li>
 		</ul>
 	  </nav>
 	</header>
@@ -26,7 +29,7 @@
 	
 	  <section class="slider-wrapper">
 	    <h2 class="visually-hidden">Преимущества дизайн-студии Nerds</h2>
-	    <ul>
+	    <ul class="slider-list">
 	      <li class="slider slider-1">
 	        <div class="slider-image"></div>
 			<b class="slider-slogan">Долго, дорого, скрупулезно</b>
@@ -42,20 +45,20 @@
 	      <li class="slider slider-3">
 		    <div class="slider-image"></div>
 	        <b class="slider-slogan">Только ночь, только хардкор</b>
-		    <p class="slider-description">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+		    <p class="slider-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 		    <a class="btn slider-btn" href="#" title="Узнать больше">Узнать больше</a>
 	      </li>
 	    </ul>
-	    <div class="slider-radio-btns">  
-		  <button type="button" name="slider-btn" id="slider-btn-1" value="slider-1"></button>
-		  <button type="button" name="slider-btn" id="slider-btn-2" value="slider-2"></button>
-		  <button type="button" name="slider-btn" id="slider-btn-3" value="slider-3"></button>  
+	    <div class="slider-switches">  
+		  <button type="button" class="slider-switch" id="slider-switch-1" value="slider-1"></button>
+		  <button type="button" class="slider-switch" id="slider-switch-2" value="slider-2"></button>
+		  <button type="button" class="slider-switch" id="slider-switch-3" value="slider-3"></button>  
 	    </div>
 	  </section>
 		
 	  <section class="services-wrapper">
 	    <h2 class="visually-hidden">Продукты дизайн-студии Nerds</h2>
-	    <ul>
+	    <ul class="services-list">
 	      <li class="services-item">
 	        <h3 class="services-title">Веб-сайты</h3>
 		      <img src="img/illustration-1.jpg" alt="Веб-сайты" width="300" height="146">
@@ -105,7 +108,7 @@
 		    </table>
 	    </div>
         <div class="company-clients">
-	      <ul>
+	      <ul class="clients-list">
 		    <li class="client-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="Htmlacademy" width="199" height="68"></a></li>
 		    <li class="client-logo"><a href="#"><img src="img/logo-2.png" alt="Borodinski" width="209" height="87"></a></li>
 		    <li class="client-logo"><a href="#"><img src="img/logo-3.png" alt="Pink" width="185" height="52"></a></li>
@@ -117,20 +120,23 @@
 	  <section class="map-contacts-wrapper">
 	    <h2 class="visually-hidden">Как найти дизайн-студию Nerds</h2>
 	    <div class="map">
-	      <a class="map-link" href="#"></a>
+	      <a class="map-link" href="#"><img src="img/map.jpg" alt="Карта с местонахождением дизайн-студии Nerds" width="1440" height="416"></a>
 	    </div>
+	    <div class="map-marker">
+		  <img src="img/map-marker.png" width="231" height="190">
+		</div>
 	    <div class="contacts">
 	      <p class="contacts-name">Nёrds Design Studio<p>
 		  <p class="contacts-address">191186, Санкт-Петербург,<br>
 		  ул. Большая Конюшенная, д.19/8</p>
-		  <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+		  <a class="contacts-phone" href="tel:+78122757575" title="Позвоните нам: +7 (812) 275-75-75">тел. +7 (812) 275-75-75</p>
 		  <a class="btn email-btn" href="#" title="Напишите нам">Напишите нам</a>
 	    </div>
 	  </section>
 	</main>
 	
 	<footer>
-	  <ul class="social-wrapper">
+	  <ul class="social-list">
 		<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
 		<li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
         <li><a class="social-btn social-btn-inst" href="#">Instagram</a></li>
@@ -143,15 +149,15 @@
 	  <h2 class="modal-title">Напишите нам</h2>
 	    <button type="button" value="close-modal-window">Закрыть окно</button>
 	    <div class="half-width">
-	      <label for="name-field">Ваше имя:</label>
-	        <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+	      <label for="name-field" class="modal-label">Ваше имя:</label>
+	        <input type="text" class="modal-input" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
 	    </div>
 	    <div class="half-width">
-	      <label for="email-field">Ваше имя:</label>
-	        <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+	      <label for="email-field" class="modal-label">Ваше имя:</label>
+	        <input type="email" class="modal-input" name="email" id="email-field" placeholder="Для отправки ответа">
 	    </div>
-	  <label for="message-field">Текст письма:</label>
-	  <textarea name="message" id="message-field" rows="4" placeholder="В свободной форме"></textarea><br>
+	  <label for="message-field" class="modal-label">Текст письма:</label>
+	  <textarea class="modal-textarea" name="message" id="message-field" rows="4" placeholder="В свободной форме"></textarea><br>
 	  <input class="btn submit-btn" type="submit" value="Отправить">
 	</section>
 	

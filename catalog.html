@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   
   <body>
 	<header class="page-header">
 	  <nav class="main-navigation">
 	    <a class="header-logo" href="index.html"><img src="img/nerds-logo.png" alt="Дизайн-студия Nerds" height="65" width="160"></a>
-	    <ul class="navigation-bar">
-		  <li class="nav-item"><a href="#">Студия</a></li>
-		  <li class="nav-item"><a href="#">Клиенты</a></li>
-		  <li class="nav-item nav-item-current"><a>Магазин</a></li>
-		  <li class="nav-item"><a href="#">Контакты</a></li>
+	    <ul class="site-navigation">
+		  <li class="site-nav-item"><a href="#" title="Студия">Студия</a></li>
+		  <li class="site-nav-item"><a href="#" title="Клиенты">Клиенты</a></li>
+		  <li class="site-nav-item site-nav-item-current"><a title="Магазин">Магазин</a></li>
+		  <li class="site-nav-item"><a href="#" title="Контакты">Контакты</a></li>
 		</ul>
-		<ul class="shopping-cart">
-		  <li class="cart-item"><a class="cart-btn" href="#">Корзина</a></li>
+		<ul class="user-navigation">
+		  <li class="user-nav-item"><a class="cart-btn" href="#">Корзина</a></li>
 		</ul>
 	  </nav>
 	</header>
@@ -28,55 +31,87 @@
 		    <h2 class="visually-hidden">Сортировка товаров</h2>
               <form action="#" method="get">
 			    
-				<div class="filter-price">
-				   
-				</div>
+				<fieldset class="filter-price">
+				  <legend class="filter-title">Стоимость:</legend>
+				  <div></div>
+				</fieldset>
 				
-				<div class="filter-layout">
-				  <p class="filter-title">Сетка:</p>
-				    <label>
-				      <input type="radio" name="layout" id="layout-field-adaptive" value="adaptive" checked>Адаптивная
-				    </label>
-				    <label>
-				      <input type="radio" name="layout" id="layout-field-fixed" value="fixed">Фиксированная
-				    </label>
-				    <label>
-				      <input type="radio" name="layout" id="layout-field-liquid" value="liquid">Резиновая
-				    </label>
-			  	</div>
+				<fieldset class="filter-layout">
+				  <legend class="filter-title">Сетка:</legend>
+				    <ul class="filter-list">
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+						<input type="radio" name="layout" id="layout-field-adaptive" value="adaptive" checked>Адаптивная
+						</label>
+				      </li>
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+						<input type="radio" name="layout" id="layout-field-fixed" value="fixed">Фиксированная
+						</label>
+				      </li>
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+						<input type="radio" name="layout" id="layout-field-liquid" value="liquid">Резиновая
+						</label>
+					  </li>
+					</ul
+				</fieldset>
 				
-				<div class="filter-features">
-				  <p class="filter-title">Особенности:</p>
-				    <label>
-				      <input type="checkbox" name="features-slider" id="features-field-slider" checked>Слайдер
-				    </label>
-				    <label>
-				      <input type="checkbox" name="features-advantages" id="features-field-advantages">Блок преимуществ
-				    </label>
-				    <label>
-				      <input type="checkbox" name="features-news" id="features-field-news" checked>Новости
-				    </label>
-				    <label>
-				      <input type="checkbox" name="features-gallery" id="features-field-gallery">Галерея
-				    </label>
-				    <label>
-				      <input type="checkbox" name="features-cart" id="features-field-cart">Корзина
-				    </label>
-				</div>
+				<fieldset class="filter-features">
+				  <legend class="filter-title">Особенности:</legend>
+				    <ul class="filter-list">
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+				        <input type="checkbox" name="features-slider" id="features-field-slider" checked>Слайдер
+				        </label>
+				      </li>
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+				        <input type="checkbox" name="features-advantages" id="features-field-advantages">Блок преимуществ
+				        </label>
+				      </li>
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+				        <input type="checkbox" name="features-news" id="features-field-news" checked>Новости
+				        </label>
+				      </li>
+					  <li class="filter-input-field">
+					    <label class="filter-label">
+				        <input type="checkbox" name="features-gallery" id="features-field-gallery">Галерея
+				        </label>
+				      </li>
+					  <li class="filter-input-field">					
+					    <label class="filter-label">
+				        <input type="checkbox" name="features-cart" id="features-field-cart">Корзина
+				        </label>
+					  </li>
+					</ul>
+				</fieldset>
 				
 				<div class="filter-button">
 				  <a class="btn filter-btn" href="#" title="Показать результаты сортировки">Показать</a>
-				</div>
-				
-			    </form>
+				</div>	
+			  </form>
 			  
 			<div class="results-sorting">
 			    <p class="filter-title">Сортировать:</p>
-				  <a class="sorting-option" href="#" title="Сортировка по цене">по цене</a>
-				  <a class="sorting-option" href="#" title="Сортировка по типу">по типу</a>
-				  <a class="sorting-option" href="#" title="Сортировка по названию">по названию</a>
-				  <a class="sorting-option" href="#" title="По нарастающей">по нарастающей</a>
-				  <a class="sorting-option" href="#" title="По убывающей">по убывающей</a>
+				  <ul class="filter-list">
+				    <li class="sorting-option">
+					  <a class="sorting-link" href="#" title="Сортировка по цене">по цене</a>
+					</li>
+					<li class="sorting-option">
+					  <a class="sorting-link" href="#" title="Сортировка по типу">по типу</a>
+				    </li>
+					<li class="sorting-option">
+				      <a class="sorting-link" href="#" title="Сортировка по названию">по названию</a>
+					</li>
+					<li class="sorting-option">
+					  <a class="sorting-link sorting-indicator" href="#" title="По нарастающей">по нарастающей</a>
+					</li>
+					<li class="sorting-option">
+				      <a class="sorting-link sorting-indicator" href="#" title="По убывающей">по убывающей</a>
+					</li>
+				  </ul>
 			</div>
 		  </section>
 		
@@ -152,18 +187,19 @@
 			  <li class="pagination-item"><a href="#">3</a></li>
 			  <li class="pagination-item"><a href="#">Следующая</a></li>
 		    </ul>
-		  </div>
-			
+		  </div>	
 		  </section>
-	  
 	  </div>
 	
 	  <section class="map-contacts-wrapper">
-	    <h1 class="visually-hidden">Как найти дизайн-студию Nerds</h1>
+	    <h2 class="visually-hidden">Как найти дизайн-студию Nerds</h2>
 	    <div class="map">
-	      <a class="map-link" href="#"></a>
+	      <a class="map-link" href="#"><img src="img/map.jpg" alt="Карта с местонахождением дизайн-студии Nerds" width="1440" height="416"></a>
 	    </div>
-	    <div class="contacts">
+	    <div class="map-marker">
+		  <img src="img/map-marker.png" width="231" height="190">
+		</div>
+		<div class="contacts">
 	      <p class="contacts-name">Nёrds Design Studio<p>
 		  <p class="contacts-address">191186, Санкт-Петербург,<br>
 		  ул. Большая Конюшенная,д.19/8</p>
@@ -174,7 +210,7 @@
 	</main>
 	
 	<footer>
-	  <ul class="social-wrapper">
+	  <ul class="social-list">
 		<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
 		<li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
         <li><a class="social-btn social-btn-inst" href="#">Instagram</a></li>

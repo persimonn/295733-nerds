@@ -1,8 +1,303 @@
-html {
-	
-}
-
 body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	display: block;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #fb565a;
+}
+
+.h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.visually-hidden {
+	visibility: hidden;
+	font-size: 0;
+}
+
+.page-header {
+    font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+
+.index-page-header {
+	background-color: #eeeeee;
+}
+
+.header-logo:hover {
 	
 }
 
+.header-logo:visited {
+	
+} 
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover, 
+.site-navigation a:focus,
+.user-navigation a:hover, 
+.user-navigation a:focus {
+	color: #fb565a;
+}
+
+.site-navigation a:visited,
+.user-navigation a:visited {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.slider-wrapper {
+	background-color: #eeeeee;
+}
+
+.slider-list {
+	list-style: none;
+}
+
+.slider-slogan {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	
+}
+
+.slider-description {
+
+}
+
+.slider-btn {
+	background-color: #fb565a;
+}
+
+.slider-btn:hover {
+	background-color: #e74246;
+}
+
+a.slider-btn:visited {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #d7373b;
+}
+
+.slider-switch {
+	display: block;
+	border-radius: 50%;
+	width: 50px;
+;
+}
+
+.services-list {
+	list-style: none;
+}
+
+.services-title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.services-item p {
+	
+}
+
+.order-btn-1 {
+	background-color: #fb565a;
+}
+
+.order-btn-2 {
+	background-color: #00ca74;
+}
+
+.order-btn-3 {
+	background-color: #efc84a;
+}
+
+.company-description-wrapper b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.products-title {
+	font-weight: 700;
+	text-transform: uppercase;
+	
+}
+
+.achievements-title {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.achievements-amount {
+	font-size: 45px;
+	line-height: ; /*???*/
+	font-weight: 700;
+	
+}
+
+.achievements-description {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.contacts-name {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.contacts-address {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+
+.contacts-phone {
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.email-btn {
+	background-color: #fb565a;
+}
+
+.social-list {
+	list-style: none;
+}
+
+
+.social-btn-vk {
+	font-size: ;
+	background-size: ;
+	background-color: ;
+	background-image: url("");
+	background-repeat: no-repeat;
+	
+}
+
+.social-promo {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.social-offer {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.modal-title {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.modal-label {
+	line-height: 18px;
+}
+
+.modal-input {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.modal-textarea {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.filter-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.filter-list {
+	list-style: none;
+}
+
+.filter-label {
+	line-height: 20px;
+	
+}
+
+.filter-btn {
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.sorting-link {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-link:active {
+	color: #000000;
+}
+
+.sorting-link.sorting-indicator {
+	font-size: ;
+}
+
+.catalog-list {
+	list-style: none;
+	
+}
+
+.item-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.item-description {
+	line-height: 18px;
+}
+
+.pagination-item {
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+}
