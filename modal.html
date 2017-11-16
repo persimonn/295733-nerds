@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс - Модальное окно</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+	<section class="modal-window">
+	  <h2 class="modal-title">Напишите нам</h2>
+	    <button type="button" value="close-modal-window">Закрыть окно</button>
+	    <div class="half-width">
+	      <label for="name-field" class="modal-label">Ваше имя:</label>
+	        <input type="text" class="modal-input" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+	    </div>
+	    <div class="half-width">
+	      <label for="email-field" class="modal-label">Ваш e-mail:</label>
+	        <input type="email" class="modal-input" name="email" id="email-field" placeholder="Для отправки ответа">
+	    </div>
+	  <label for="message-field" class="modal-label">Текст письма:</label>
+	  <textarea class="modal-textarea" name="message" id="message-field" rows="4" placeholder="В свободной форме"></textarea><br>
+	  <input class="btn submit-btn" type="submit" value="Отправить">
+	</section>	
+  </body>
+ </html>
