@@ -370,20 +370,19 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) {
+.slider-switch-1:checked ~ .slides .slide:nth-child(1) {
 	display: block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) {
+.slider-switch-2:checked ~ .slides .slide:nth-child(2) {
 	display: block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) {
+.slider-switch-3:checked ~ .slides .slide:nth-child(3) {
 	display: block;
 }
 
 .services-wrapper {
-	padding-bottom: 82px;
 	position: relative;
 }
 
@@ -411,6 +410,12 @@ input[type="radio"].visually-hidden {
 
 .services-item {
 	width: 300px;
+	margin-bottom: 82px;
+	margin-right: 100px;
+}
+
+.services-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .services-title {
@@ -1218,7 +1223,7 @@ input[type="checkbox"]:disabled+label::before {
 	list-style: none;
 	padding-left: 0;
 	margin: 0;
-	margin-top: 52px;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -1227,10 +1232,15 @@ input[type="checkbox"]:disabled+label::before {
 
 .catalog-item {
 	width: 360px;
-	margin-bottom: 26px;	
+	margin-bottom: 26px;
+	margin-right: 40px;	
 	position: relative;
-	
 }
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
+}
+
 .catalog-item:hover .item-card {
 	display: block;
 	background-color: #eeeeee;
@@ -1265,9 +1275,8 @@ input[type="checkbox"]:disabled+label::before {
 	position: absolute; 
 	bottom: 0;
 	width: 360px;
-	height: 237px;
 	padding-top: 26px;
-	padding-bottom: 43px;
+	padding-bottom: 50px;
 	background-color: #ffffff;
 	text-align: center;
 	display: none;
@@ -1287,7 +1296,7 @@ input[type="checkbox"]:disabled+label::before {
 	line-height: 18px;
 	text-align: center;
 	width: 240px;
-	padding-top: 16px;
+	padding-top: 13px;
 	padding-bottom: 33px;
 	margin-left: auto;
 	margin-right: auto;
@@ -1389,7 +1398,6 @@ input[type="checkbox"]:disabled+label::before {
 .modal-window {
 	display: block;
 	width: 960px;
-	height: 592px;
 	background-color: #ffffff;
 	padding-top: 73px;
 	padding-bottom: 84px;
@@ -1496,8 +1504,12 @@ input[type="checkbox"]:disabled+label::before {
 	color: #e74246;
 }
 
-.modal-input-fullwidth {
+.modal-input-fullwidth:first-child {
 	padding-bottom: 50px;
+}
+
+.modal-input-fullwidth:nth-child(2) {
+	padding-bottom: 0;
 }
 
 .modal-textarea {
@@ -1511,6 +1523,8 @@ input[type="checkbox"]:disabled+label::before {
 	height: 116px;
 	padding-top: 10px;
 	padding-left: 13px;
+	overflow: hidden;
+	resize: none;
 }
 
 .modal-textarea:hover {
