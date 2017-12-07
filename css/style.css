@@ -50,7 +50,6 @@ input[type="radio"].visually-hidden {
 	clip-path: inset(100%);	
 }
 
-
 .container {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -214,6 +213,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: 0;
 	margin-bottom: 0;
 	background-color: #ffffff;
@@ -348,19 +348,19 @@ input[type="radio"].visually-hidden {
 	border-right: 3px solid #d7373b;
 }
 
-.slide:nth-child(1){
+.slide:nth-child(1) {
 	background-image: url(../img/slide-1.png);
 	background-repeat: no-repeat;
 	background-position: 432px 14px;
 }
 
-.slide:nth-child(2){
+.slide:nth-child(2) {
 	background-image: url(../img/slide-2.png);
 	background-repeat: no-repeat;
 	background-position: 495px 0px;
 }
 
-.slide:nth-child(3){
+.slide:nth-child(3) {
 	background-image: url(../img/slide-3.png);
 	background-repeat: no-repeat;
 	background-position: 400px 16px;
@@ -517,7 +517,6 @@ input[type="radio"].visually-hidden {
 	border-bottom: 3px solid #e5a722;
 	border-right: 3px solid #e5a722;
 	border-left: 3px solid #e5a722;
-	
 }
 
 .company-description-wrapper {
@@ -593,6 +592,7 @@ input[type="radio"].visually-hidden {
 .description-section-2 {
 	width: 360px;
 	padding-top: 277px;
+	background-color: #ffffff;
 	background-image: url(../img/nerds-illustration.jpg);
 	background-repeat: no-repeat;
 	background-position: 1px 40px;
@@ -703,6 +703,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map-wrapper {
+	background-color: #f1efe8;
 	background-image: url(../img/write_us_s.jpg);
 	background-repeat: no-repeat;
 	height: 416px;
@@ -1040,7 +1041,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 34px;
 }
 							
-input[type="radio"]+label::before { 
+input[type="radio"].filter-radio+label::before { 
 	background-image: url(../img/radio-off.svg); 
 	background-size: 25px 25px;
 	opacity: 0.5;
@@ -1048,7 +1049,7 @@ input[type="radio"]+label::before {
 	left: 2px;
 } 
 
-input[type="radio"]:checked+label::before { 
+input[type="radio"].filter-radio:checked+label::before { 
 	background-image: url(../img/radio-on.svg); 
 	background-size: 25px 25px;
 	opacity: 0.5;
@@ -1056,8 +1057,8 @@ input[type="radio"]:checked+label::before {
 	left: 2px;
 } 
 
-input[type="radio"]+label::before,
-input[type="checkbox"]+label::before { 
+input[type="radio"].filter-radio+label::before,
+input[type="checkbox"].filter-checkbox+label::before { 
 	position: absolute; 
 	top: 11px; 
 	left: 2px;
@@ -1068,16 +1069,16 @@ input[type="checkbox"]+label::before {
 	content: ""; 
 }
 
-input[type="radio"]:hover+label::before,
-input[type="radio"]:focus+label::before { 
+input[type="radio"].filter-radio:hover+label::before,
+input[type="radio"].filter-radio:focus+label::before { 
 	opacity: 1;	
 } 
 
-input[type="radio"]:disabled+label::before { 
+input[type="radio"].filter-radio:disabled+label::before { 
 	opacity: 0.3;	
 } 
 
-input[type="checkbox"]+label::before { 
+input[type="checkbox"].filter-checkbox+label::before { 
 	background-image: url(../img/checkbox-off.svg); 
 	background-size: 25px 25px;
 	opacity: 0.5;	
@@ -1085,7 +1086,7 @@ input[type="checkbox"]+label::before {
 	left: 2px;
 }
 
-input[type="checkbox"]:checked+label::before { 
+input[type="checkbox"].filter-checkbox:checked+label::before { 
 	background-image: url(../img/checkbox-on.svg); 
 	background-size: 25px 25px;
 	opacity: 0.5;	
@@ -1093,12 +1094,12 @@ input[type="checkbox"]:checked+label::before {
 	left: 2px;
 }
 
-input[type="checkbox"]:hover+label::before,
- input[type="checkbox"]:focus+label::before { 
+input[type="checkbox"].filter-checkbox:hover+label::before,
+ input[type="checkbox"].filter-checkbox:focus+label::before { 
 	opacity: 1;	
 }
 
-input[type="checkbox"]:disabled+label::before { 
+input[type="checkbox"].filter-checkbox:disabled+label::before { 
 	opacity: 0.3;	
 }
 
@@ -1579,5 +1580,3 @@ input[type="checkbox"]:disabled+label::before {
 .modal-window-catalog {
 	display: none;
 }
-
-
